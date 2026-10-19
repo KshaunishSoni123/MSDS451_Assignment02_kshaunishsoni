@@ -1,0 +1,39 @@
+\begin{table}
+\caption{Best portfolios selected from the Monte Carlo simulation}
+\label{tab:simulation-selections}
+\begin{tabular}{lllrrrrrr}
+\toprule
+ &  &  & w\_LLY & w\_JNJ & w\_ISRG & returnMean & returnSD & Sharpe \\
+Returns & Positions & Portfolio &  &  &  &  &  &  \\
+\midrule
+\multirow[t]{12}{*}{Historical} & \multirow[t]{6}{*}{Long Positions Only} & Minimum Variance & 0.0901 & 0.7863 & 0.1237 & 0.1518 & 0.1643 & 0.9240 \\
+ &  & Maximum Sharpe & 0.6011 & 0.2404 & 0.1585 & 0.2579 & 0.2128 & 1.2118 \\
+ &  & Max Return, SD $\leq$ 17\% & 0.2633 & 0.6093 & 0.1274 & 0.1871 & 0.1693 & 1.1051 \\
+ &  & Max Return, SD $\leq$ 20\% & 0.5202 & 0.3307 & 0.1491 & 0.2408 & 0.1991 & 1.2091 \\
+ &  & Max Return, SD $\leq$ 25\% & 0.7591 & 0.0061 & 0.2348 & 0.2964 & 0.2488 & 1.1915 \\
+ &  & Max Return, SD $\leq$ 30\% & 0.8797 & 0.0527 & 0.0676 & 0.3063 & 0.2614 & 1.1720 \\
+\cline{2-9}
+ & \multirow[t]{6}{*}{Shorts OK} & Minimum Variance & 0.0899 & 0.7885 & 0.1216 & 0.1516 & 0.1643 & 0.9227 \\
+ &  & Maximum Sharpe & 0.6039 & 0.2312 & 0.1648 & 0.2590 & 0.2138 & 1.2118 \\
+ &  & Max Return, SD $\leq$ 17\% & 0.2495 & 0.6329 & 0.1176 & 0.1834 & 0.1682 & 1.0906 \\
+ &  & Max Return, SD $\leq$ 20\% & 0.4883 & 0.3042 & 0.2075 & 0.2394 & 0.1985 & 1.2059 \\
+ &  & Max Return, SD $\leq$ 25\% & 0.7741 & 0.0271 & 0.1988 & 0.2963 & 0.2484 & 1.1929 \\
+ &  & Max Return, SD $\leq$ 30\% & 0.8623 & -0.2957 & 0.4334 & 0.3344 & 0.2953 & 1.1324 \\
+\cline{1-9} \cline{2-9}
+\multirow[t]{12}{*}{Simulated} & \multirow[t]{6}{*}{Long Positions Only} & Minimum Variance & 0.1572 & 0.7226 & 0.1202 & 0.1595 & 0.1596 & 0.9992 \\
+ &  & Maximum Sharpe & 0.6152 & 0.1741 & 0.2107 & 0.2659 & 0.2076 & 1.2808 \\
+ &  & Max Return, SD $\leq$ 17\% & 0.3562 & 0.5019 & 0.1419 & 0.2041 & 0.1695 & 1.2041 \\
+ &  & Max Return, SD $\leq$ 20\% & 0.5457 & 0.2136 & 0.2407 & 0.2537 & 0.1986 & 1.2775 \\
+ &  & Max Return, SD $\leq$ 25\% & 0.8406 & 0.0418 & 0.1177 & 0.3057 & 0.2447 & 1.2496 \\
+ &  & Max Return, SD $\leq$ 30\% & 0.8797 & 0.0527 & 0.0676 & 0.3096 & 0.2509 & 1.2336 \\
+\cline{2-9}
+ & \multirow[t]{6}{*}{Shorts OK} & Minimum Variance & 0.0899 & 0.7885 & 0.1216 & 0.1452 & 0.1603 & 0.9058 \\
+ &  & Maximum Sharpe & 0.6329 & 0.1177 & 0.2493 & 0.2731 & 0.2136 & 1.2787 \\
+ &  & Max Return, SD $\leq$ 17\% & 0.3307 & 0.5361 & 0.1331 & 0.1979 & 0.1672 & 1.1836 \\
+ &  & Max Return, SD $\leq$ 20\% & 0.5788 & 0.2809 & 0.1404 & 0.2517 & 0.1977 & 1.2729 \\
+ &  & Max Return, SD $\leq$ 25\% & 0.6985 & -0.1188 & 0.4202 & 0.3027 & 0.2451 & 1.2350 \\
+ &  & Max Return, SD $\leq$ 30\% & 0.9130 & -0.4088 & 0.4958 & 0.3555 & 0.2981 & 1.1924 \\
+\cline{1-9} \cline{2-9}
+\bottomrule
+\end{tabular}
+\end{table}
