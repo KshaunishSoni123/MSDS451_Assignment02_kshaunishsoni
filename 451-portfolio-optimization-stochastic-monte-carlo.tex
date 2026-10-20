@@ -1,0 +1,21 @@
+\begin{table}
+\caption{Stochastic Monte Carlo optimal portfolios with a quadratic volatility constraint}
+\label{tab:stochastic-monte-carlo}
+\begin{tabular}{llrrrrrrrrr}
+\toprule
+ &  & w\_LLY & w\_JNJ & w\_ISRG & w\_UNH & Simulated Return & Simulated Vol & Sharpe & Prob. Loss & 5\% VaR \\
+Positions & Risk Ceiling &  &  &  &  &  &  &  &  &  \\
+\midrule
+\multirow[t]{4}{*}{Long Positions Only} & Vol $\leq$ 17\% & 0.3317 & 0.4032 & 0.1055 & 0.1596 & 0.2024 & 0.1700 & 1.1909 & 0.1158 & 0.0740 \\
+ & Vol $\leq$ 20\% & 0.5358 & 0.1722 & 0.1310 & 0.1609 & 0.2454 & 0.2000 & 1.2271 & 0.1059 & 0.0774 \\
+ & Vol $\leq$ 25\% & 0.8079 & 0.0000 & 0.1179 & 0.0742 & 0.2956 & 0.2500 & 1.1825 & 0.1156 & 0.1101 \\
+ & Vol $\leq$ 30\% & 1.0000 & 0.0000 & 0.0000 & 0.0000 & 0.3212 & 0.2865 & 1.1210 & 0.1304 & 0.1449 \\
+\cline{1-11}
+\multirow[t]{4}{*}{Shorts OK} & Vol $\leq$ 17\% & 0.3317 & 0.4032 & 0.1055 & 0.1596 & 0.2024 & 0.1700 & 1.1909 & 0.1158 & 0.0740 \\
+ & Vol $\leq$ 20\% & 0.5358 & 0.1722 & 0.1310 & 0.1609 & 0.2454 & 0.2000 & 1.2271 & 0.1059 & 0.0774 \\
+ & Vol $\leq$ 25\% & 0.7826 & -0.1050 & 0.1632 & 0.1592 & 0.2974 & 0.2500 & 1.1895 & 0.1116 & 0.1071 \\
+ & Vol $\leq$ 30\% & 0.9962 & -0.3458 & 0.1908 & 0.1589 & 0.3424 & 0.3000 & 1.1412 & 0.1240 & 0.1451 \\
+\cline{1-11}
+\bottomrule
+\end{tabular}
+\end{table}
