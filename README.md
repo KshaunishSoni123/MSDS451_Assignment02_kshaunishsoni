@@ -146,36 +146,8 @@ Each row is an asset set and each column is a position rule. Rows have their own
 3. **Look at the downside columns (Prob. Loss, 5% VaR),** not only volatility. Two portfolios can have similar volatility but different chances of a losing year.
 4. **Look at concentration.** A weight near 1 means diversification is gone, and the result rests on a single asset's estimated return.
 
-### Key findings (current run)
 
-**Healthcare Stocks** (w1–w4 = LLY, JNJ, ISRG, UNH)
-
-| Ceiling | Long-only weights | Return | Sharpe | Prob. Loss | Shorts OK return |
-|---|---|---|---|---|---|
-| 17% | .33 / .40 / .11 / .16 | 20.2% | 1.19 | 11.6% | same |
-| **20%** | **.54 / .17 / .13 / .16** | **24.5%** | **1.23** | **10.6%** | same |
-| 25% | .81 / .00 / .12 / .07 | 29.6% | 1.18 | 11.6% | 29.7% (short JNJ −.11) |
-| 30% | 1.00 / 0 / 0 / 0 | 32.1% | 1.12 | 13.0% | 34.2% (short JNJ −.35) |
-
-**Recommended: the long-only portfolio with a 20% volatility ceiling.** It has the highest Sharpe ratio and the lowest chance of a losing year of all eight healthcare portfolios, and it needs no short selling. Moving the ceiling from 17% to 20% adds 4.3 points of return with almost no extra downside: the VaR goes from 7.4% to 7.7%. Above 20%, the Sharpe falls and the portfolio concentrates in LLY.
-
-**Original Assets** (w1–w4 = A, B, C, D)
-
-| Ceiling | Long-only weights | Return | Sharpe | Shorts OK return |
-|---|---|---|---|---|
-| 5% | .93 / .07 / 0 / 0 | 2.4% | 0.47 | 2.5% |
-| 10% | .50 / 0 / .36 / .15 | 9.2% | 0.92 | 9.2% |
-| **15%** | **.17 / 0 / .57 / .26** | **14.0%** | **0.93** | 14.0% (short B −.12) |
-| 20% | 0 / 0 / .40 / .60 | 17.9% | 0.89 | 18.6% (short B −.20) |
-
-For A–D, the 15% ceiling gives the best risk-adjusted return. The optimizer never holds asset B. C pays more per unit of risk, and B's 0.6 correlation with C and D means it adds little diversification. When shorts are allowed, B becomes the asset sold short to fund larger positions in C and D.
-
-**Across both sets:** short selling adds little, less than 1 point of return, except at the highest ceilings. And that's before borrow costs and margin requirements, which the model doesn't include.
-
-## Limitations
-
-- **The model captures uncertainty in returns, not in the estimates.** Every scenario is drawn from the same $\mu$ and $\Sigma$, so errors in those inputs carry straight into the weights. With 10,000 scenarios, the solution closely matches the deterministic mean-variance answer.
-- **The healthcare results depend on one decade.** LLY's 32% annualized return came from an exceptional period. If future returns are lower, the LLY-heavy portfolios at the 25–30% ceilings carry the most risk.
-- **Returns are assumed normally distributed.** Real returns have fatter tails, so the true Prob. Loss and VaR are likely somewhat worse than reported.
-- **It's a single-period model.** There's no rebalancing, and no transaction costs, taxes or short-sale costs.
-- **The risk-free rate is 0 in the Sharpe ratios.** A positive rate lowers every Sharpe ratio but doesn't change the ranking.
+## AI Use
+- Generative AI was used in conjunction with the provided materials to format code and build outputs. 
+- Generative AI was also used in creating the ReadMe MD file for the solution. 
+- All logic, overall decisions, initial code design, interpretations, analysis, and writeup were conducted by Kshaunish Soni. 
